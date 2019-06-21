@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <!-- 第一步：适配页面 -->
+    <script>
+
+            ~ function () {
+                function computed() {
+                    var pcWidth = document.documentElement.clientWidth
+                    var des = 750;
+                    if (pcWidth > 750) {
+                        document.documentElement.style.fontSize = "100px";
+                        return;
+                    }
+                    document.documentElement.style.fontSize = pcWidth / des * 100 + "px";
+                }
+                computed()
+    
+            }();
+    </script>
+    <!-- 重置样式表 -->
+    <link rel="stylesheet" href="css/reset.css">
+    <!-- swiper插件中的swiper.min.css -->
+    <link rel="stylesheet" href="css/swiper.min.css">
+    <!-- 动画库的样式 -->
+    <link rel="stylesheet" href="css/animate.min.css">
+    <!-- 这个是自己要写的css -->
+    <link rel="stylesheet" href="css/index.css">
+</head>
+<body>  
+  <div class="yinyue">
+        <audio src="img/yinyue.mp3"  autoplay loop></audio>
+   </div>
+
+  <!-- 第二步骤：复制swiper的结构 -->
+        <div class="swiper-container">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide" id="page1">
+                        <!-- 第一页的内容 -->
+                        <img class="people ani" 
+                        swiper-animate-effect="bounceInDown" swiper-animate-duration="1.5s" swiper-animate-delay="0s"
+                        src="img/people.jpg "alt="">
+
+
+
+                        <img class="ge ani" 
+                        swiper-animate-effect="bounceInLeft" swiper-animate-duration="1.5s" swiper-animate-delay="0s"
+                        src="img/个.gif" alt="">
+
+
+                        <img class="ren ani"
+                        swiper-animate-effect="bounceInRight" swiper-animate-duration="1.5s" swiper-animate-delay="0s"
+                         src="img/人.gif" alt="">
+
+
+                        <img class="jian ani"
+                        swiper-animate-effect="bounceInLeft" swiper-animate-duration="1.5s" swiper-animate-delay="0s"
+                        src="img/简.gif" alt="">
+
+
+                        <img class="li ani"
+                        swiper-animate-effect="bounceInRight" swiper-animate-duration="1.5s" swiper-animate-delay="0s"
+                        src="img/历 .gif" alt="">
+
+
+                        
+                  
+                    </div>
+                    
+                    <div class="swiper-slide" id="page2">
+                        <!-- 第二页 -->
+                        <!-- 第二页的内容 -->
+                        <img class="me ani" 
+                        swiper-animate-effect="bounceInDown" swiper-animate-duration="1.5s" swiper-animate-delay="0s"
+                        src="img/me_03.gif "alt="">
+
+
+                        <img class="jiben ani" 
+                        swiper-animate-effect="bounceInLeft" swiper-animate-duration="1.5s" swiper-animate-delay="1s"
+                        src="img/！_03.gif "alt="">
+
+
+                        <img class="zi ani" 
+                        swiper-animate-effect="bounceInLeft" swiper-animate-duration="1.5s" swiper-animate-delay="2s"
+                        src="img/基本信息_03.gif"alt="">
+
+
+
+                        <img class="tupian ani" 
+                        swiper-animate-effect="fadeInUpBig" swiper-animate-duration="1.5s" swiper-animate-delay="3s"
+                        src="img/图片.png"alt="">
+
+
+
+                    </div>
+                    <div class="swiper-slide" id="page3">
+                        <!-- 第三页 -->
+                        <!-- 第三页的内容 -->
+                        <img class="me ani" 
+                        swiper-animate-effect="bounceInDown" swiper-animate-duration="1.5s" swiper-animate-delay="0s"
+                        src="img/me_03.gif "alt="">
+
+
+
+                        <img class="yixiang ani" 
+                        swiper-animate-effect="bounceInLeft" swiper-animate-duration="1.5s" swiper-animate-delay="1s"
+                        src="img/01.gif "alt="">
+
+
+
+                        <img class="congshi ani" 
+                        swiper-animate-effect="bounceInLeft" swiper-animate-duration="1.5s" swiper-animate-delay="2s"
+                        src="img/02.gif "alt="">
+
+
+                        <img class="pingmian ani" 
+                        swiper-animate-effect="bounceInRight" swiper-animate-duration="1.5s" swiper-animate-delay="3s"
+                        src="img/03.gif "alt="">
+
+
+
+                        <img class="ui ani" 
+                        swiper-animate-effect="bounceInRight" swiper-animate-duration="1.5s" swiper-animate-delay="4s"
+                        src="img/04.gif "alt="">
+
+
+
+                        <img class="cehua ani" 
+                        swiper-animate-effect="bounceInRight" swiper-animate-duration="1.5s" swiper-animate-delay="5s"
+                        src="img/05.gif "alt="">
+
+
+
+                        <img class="xinzi ani" 
+                        swiper-animate-effect="bounceInLeft" swiper-animate-duration="1.5s" swiper-animate-delay="6s"
+                        src="img/06.gif "alt="">
+
+
+
+                        <img class="qian ani" 
+                        swiper-animate-effect="bounceInRight" swiper-animate-duration="1.5s" swiper-animate-delay="7s"
+                        src="img/07.gif "alt="">
+
+
+
+                        <img class="jiaoyu ani" 
+                        swiper-animate-effect="bounceInLeft" swiper-animate-duration="1.5s" swiper-animate-delay="8s"
+                        src="img/08.gif "alt="">
+
+
+
+                        <img class="baozhi ani" 
+                        swiper-animate-effect="bounceInLeft" swiper-animate-duration="1.5s" swiper-animate-delay="9s"
+                        src="img/09.gif "alt="">
+
+
+
+                        <img class="guanggao ani" 
+                        swiper-animate-effect="bounceInLeft" swiper-animate-duration="1.5s" swiper-animate-delay="10s"
+                        src="img/10.gif "alt="">
+
+
+
+                        <img class="nian ani" 
+                        swiper-animate-effect="bounceInLeft" swiper-animate-duration="1.5s" swiper-animate-delay="11s"
+                        src="img/11.gif "alt="">
+
+
+
+                        <img class="tupian1 ani" 
+                        swiper-animate-effect="fadeInUpBig" swiper-animate-duration="1.5s" swiper-animate-delay="12s"
+                        src="img/图片1.png "alt="">
+
+                    </div>
+                    <div class="swiper-slide" id="page4">
+                        <!-- 第四页 -->
+                        <!-- 第四页的内容 -->
+                        <img class="me ani" 
+                        swiper-animate-effect="bounceInDown" swiper-animate-duration="1.5s" swiper-animate-delay="0s"
+                        src="img/me_03.gif "alt="">
+
+
+
+
+                        <img class="huojiang ani" 
+                        swiper-animate-effect="bounceInLeft" swiper-animate-duration="1.5s" swiper-animate-delay="1s"
+                        src="img/获奖.gif "alt="">
+
+
+
+                        <img class="jiang ani" 
+                        swiper-animate-effect="bounceIn" swiper-animate-duration="1.5s" swiper-animate-delay="2s"
+                        src="img/奖.gif "alt="">
+
+
+
+                        <img class="zhuanye ani" 
+                        swiper-animate-effect="bounceInLeft" swiper-animate-duration="1.5s" swiper-animate-delay="3s"
+                        src="img/专业.gif "alt="">
+
+
+
+                        
+
+
+                        <img class="ps ani" 
+                        swiper-animate-effect="bounceIn" swiper-animate-duration="1.5s" swiper-animate-delay="4.5s"
+                        src="img/ps.gif "alt="">
+
+
+
+                        
+
+
+                        <img class="ai ani" 
+                        swiper-animate-effect="bounceIn" swiper-animate-duration="1.5s" swiper-animate-delay="4.5s"
+                        src="img/ai.gif "alt="">
+
+
+                        
+                        <img class="dw ani" 
+                        swiper-animate-effect="bounceIn" swiper-animate-duration="1.5s" swiper-animate-delay="4.5s"
+                        src="img/dw.gif "alt="">
+
+
+
+                        <img class="vs ani" 
+                        swiper-animate-effect="bounceIn" swiper-animate-duration="1.5s" swiper-animate-delay="4.5s"
+                        src="img/vs.gif "alt="">
+
+
+                        
+
+
+
+                        
+                    </div>
+                    <div class="swiper-slide" id="page5">
+                        <!-- 第五页 -->
+                        <!-- 第五页的内容 -->
+                        <img class="zuopin ani" 
+                        swiper-animate-effect="bounceInDown" swiper-animate-duration="1.5s" swiper-animate-delay="0s"
+                        src="img/作品_03.gif "alt="">
+
+
+
+                        <img class="beigu ani" 
+                        swiper-animate-effect="rotateInDownLeft" swiper-animate-duration="2s" swiper-animate-delay="1.5s"
+                        src="img/广告1732魏淑君09纪念碑谷.jpg"alt="">
+
+
+                      
+                        <img class="xieshi ani" 
+                        swiper-animate-effect="rotateInDownRight" swiper-animate-duration="2s" swiper-animate-delay="1.5s"
+                        src="img/写实.jpg"alt="">
+
+
+                        
+                        <img class="duola ani" 
+                        swiper-animate-effect="rotateInUpLeft" swiper-animate-duration="2s" swiper-animate-delay="1.5s"
+                        src="img/多啦A梦.jpg"alt="">
+
+
+
+
+                        <img class="chahua ani" 
+                        swiper-animate-effect="rotateInUpRight" swiper-animate-duration="2s" swiper-animate-delay="1.5s"
+                        src="img/插画设计.jpg"alt="">
+
+                        <img class="tubiao1 ani" 
+                        swiper-animate-effect="bounceInLeft" swiper-animate-duration="3.5s" swiper-animate-delay="3s"
+                        src="img/图标1_02.gif "alt="">
+
+
+                       <img class="tubiao2 ani" 
+                       swiper-animate-effect="bounceInLeft" swiper-animate-duration="2s" swiper-animate-delay="3s"
+                        src="img/图标2_02.gif"alt="">
+
+
+                        <img class="tubiao3 ani" 
+                        swiper-animate-effect="bounceInRight" swiper-animate-duration="2s" swiper-animate-delay="3s"
+                        src="img/图标3_04.gif"alt="">
+
+
+                        <img class="tubiao4 ani" 
+                        swiper-animate-effect="bounceInRight" swiper-animate-duration="3.5s" swiper-animate-delay="3s"
+                        src="img/图标4_02.gif"alt="">
+
+
+
+                        <img class="wutai ani" 
+                        swiper-animate-effect="fadeInUpBig" swiper-animate-duration="1s" swiper-animate-delay="0s"
+                        src="img/作品.png"alt="">
+
+
+                    
+
+                    </div>
+                    
+                
+                <div class="swiper-slide" id="page6">
+                    <!-- 第六页 -->
+                    <!-- 第六页的内容 -->
+                    <img class="zuopin ani" 
+                    swiper-animate-effect="bounceInDown" swiper-animate-duration="1.5s" swiper-animate-delay="0s"
+                    src="img/作品_03.gif "alt="">
+
+
+                    
+                    <img class="shouhui1 ani" 
+                    swiper-animate-effect="bounceIn" swiper-animate-duration="1.5s" swiper-animate-delay="1s"
+                    src="img/手绘1.jpg"alt="">
+
+
+                    
+                    <img class="pingmian1 ani" 
+                    swiper-animate-effect="rotateInUpLeft" swiper-animate-duration="1.5s" swiper-animate-delay="2s"
+                    src="img/京东.jpg"alt="">
+
+
+                    
+                    <img class="pingmian2 ani" 
+                    swiper-animate-effect="bounceIn" swiper-animate-duration="1.5s" swiper-animate-delay="2s"
+                    src="img/京东1.jpg"alt="">
+
+
+                    
+                    <img class="pingmian3 ani" 
+                    swiper-animate-effect="rotateInUpRight" swiper-animate-duration="1.5s" swiper-animate-delay="2s"
+                    src="img/京东2.jpg"alt="">
+
+
+                  
+                    <img class="wutai ani" 
+                    swiper-animate-effect="fadeInUpBig" swiper-animate-duration="1s" swiper-animate-delay="0s"
+                    src="img/作品.png"alt="">
+
+
+
+                   
+                </div>
+                <div class="swiper-slide" id="page7">
+                  <!-- 第七页 -->
+                  <!-- 第七页的内容 -->
+                  <img class="me ani" 
+                  swiper-animate-effect="bounceInDown" swiper-animate-duration="1.5s" swiper-animate-delay="0s"
+                  src="img/me_03.gif "alt="">
+
+
+                  <img class="weixin ani" 
+                  swiper-animate-effect="rotateIn" swiper-animate-duration="2s" swiper-animate-delay="2s"
+                  src="img/微信.jpg"alt="">
+
+
+                  <img class="geren ani" 
+                  swiper-animate-effect="fadeInUpBig" swiper-animate-duration="1s" swiper-animate-delay="1s"
+                   src="img/个人微信_21.gif "alt="">
+
+
+                  </div>
+              </div>
+               
+                <!-- 如果需要导航按钮 -->
+                <div class="swiper-button-next" id="next"></div>
+            </div>
+            
+</body>
+</html>
+<!-- 第一步：连接swiper中的js -->
+<script src="js/swiper.min.js"></script>
+<!-- 动画库的js -->
+<script src="js/swiper.animate.min.js"></script>
+
+<script>
+  // 第三步骤：初始化swiper 插件
+ window.onload=function(){
+    var mySwiper = new Swiper ('.swiper-container', {
+    direction: 'vertical', // 垂直切换选项
+    loop: true, // 循环模式选项
+    // 如果需要前进后退按钮
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+    on:{
+      init: function(){
+        swiperAnimateCache(this); //隐藏动画元素 
+        swiperAnimate(this); //初始化完成开始动画
+      }, 
+      slideChangeTransitionEnd: function(){ 
+        swiperAnimate(this); //每个slide切换结束时也运行当前slide动画
+        //this.slides.eq(this.activeIndex).find('.ani').removeClass('ani'); 动画只展现一次，去除ani类名
+      } 
+    }
+    
+  })        
+ }
+</script>
